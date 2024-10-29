@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nono.css">
+</head>
+<body>
+    <style>
+        body {
+        background: url(bg.jpeg) no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        margin: 6rem auto 0; 
+        width: 80%;
+        background-color: rgba(0, 0, 128, 0.7);
+        border: 2px dashed white;
+        border-radius: 20px;
+        padding: 1rem;
+        box-shadow: 5px 5px;
+        overflow: auto;
+    }
+
+    .container h2 {
+        text-align: center;
+        color: white;
+    }
+
+    table {
+        width: 100%; 
+        margin: 20px auto; 
+        height: 25vh;
+        border: 2px dashed white;
+    }
+
+    th, td {
+        color: white;
+        text-align: center;
+        padding: 5.5px;
+    }
+
+    table td:hover, table th:hover {
+            background-color: pink;
+        }
+
+    @media (max-width: 600px) {
+            .container {
+                width: 90%; 
+
+            th, td {
+                font-size: 14px; 
+            }
+        }
+    }
+
+    
+    </style>
+    <div class="container">
+        <h2>Jadwalku</h2>
+        <table border="1" cellpadding="9" cellspacing="0" >
+        <tr>
+            <th></th>
+            <th>SENIN</th>
+            <th>SELASA</th>
+            <th>RABU</th>
+            <th>KAMIS</th>
+            <th>JUMAT</th>
+        </tr>
+         
+        <tr>
+            <th>1</th>
+            <td rowspan="3" align="center">PAG</td>
+            <td rowspan="3" align="center">DPPLG</td>
+            <td rowspan="2" align="center">BNG</td>
+            <td rowspan="3" align="center">IPAS</td>
+            <td rowspan="2" align="center">DPPLG</td>
+        </tr>
+
+        <tr>
+            <th>2</th>
+        </tr>
+
+        <tr>
+            <th>3</th>
+            <td align="center">SNM</td>
+            <td align="center">MTK</td>
+        </tr>
+
+        <tr>
+            <th colspan="6">IST</th>
+        </tr>
+
+        <tr>
+            <th>4</th>
+            <td rowspan="3" align="center">POR</td>
+            <td rowspan="3" align="center">DPPLG</td>
+            <td rowspan="1" align="center">SNM</td>
+            <td rowspan="3" align="center">IPAS</td>
+            <td rowspan="1" align="center">MTK</td>
+        </tr>
+
+        <tr>
+            <th>5</th>
+            <td rowspan="2" align="center">SJR</td>
+            <td rowspan="2" align="center">PPS</td>
+        </tr>
+
+        <tr>
+            <th>6</th>
+        </tr>
+
+        <tr>
+            <th colspan="6">IST</th>
+        </tr>
+
+        <tr>
+            <th>7</th>
+            <td rowspan="2" align="center">MTK</td>
+            <td rowspan="4" align="center">DPPLG</td>
+            <td rowspan="2" align="center">BIN</td>
+            <td rowspan="4" align="center">INF</td>
+            <td rowspan="2" align="center">BIN</td>
+        </tr>
+
+        <tr>
+            <th>8</th>
+            
+        </tr>
+
+        <tr>
+            <th>9</th>
+            <td rowspan="2" align="center">BNG</td>
+            <td rowspan="2" align="center">BJW</td>
+            <td rowspan="2" align="center"></td>
+        </tr>
+        
+        <tr>
+            <th>10</th>
+            
+        </tr>
+</body>
+</html>

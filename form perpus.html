@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Anggota Perpustakaan</title>
+  <link rel="stylesheet" href="stot.css">
+</head>
+<body>
+  <style>
+  body {
+      background: url(galaxy.jpg) no-repeat center center fixed;
+      background-size: cover; 
+      margin: 0; 
+      overflow: hidden; 
+      height: 100vh; 
+    }
+
+    .container {
+      background-color: rgba(217, 101, 186, 0.5);
+      border: dashed 4px;
+      border-color: white;
+      border-radius: 20px;
+      padding: 20px 40px;
+      width: 90%;
+      max-width: 800px;
+      margin: auto;
+      margin-top: 8vh;
+      box-shadow: 10px 5px;
+    }
+
+    .input {
+      margin: 9px;
+    }
+
+    .container h2 {
+      text-align: center;
+      border-bottom: 2px dashed;
+      border-color: white;
+      color: white;
+    }
+
+    .input label {
+      color: white;
+    }
+
+    .bttn {
+      display: block;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .bttn button {
+      width: 100px;
+      height: 25px;
+    }
+
+    .input select,
+    .input input[type="text"],
+    .input input[type="date"],
+    .input input[type="number"],
+    .input textarea {
+      width: 100%; 
+      box-sizing: border-box; 
+    }
+
+    
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px; 
+      }
+    }
+      
+    
+</style>
+  </style>
+  <div class="container">
+    <h2>Form Anggota Perpustakaan</h2>
+    <form>
+      <div class="input">
+        <label for="nama">Nama:</label><br> 
+        <input type="text" placeholder="Nama Lengkap Anda">
+      </div>
+
+      <div class="input">
+        <label for="Kota">Kota Lahir:</label><br>
+        <input type="text" list="kota-lahir" placeholder="Kota Lahir Anda..">
+        <datalist id="kota-lahir">
+          <option value="balikpapan">balikpapan</option>
+          <option value="solo">solo</option>
+          <option value="maluku">maluku</option>
+          <option value="madiun">madiun</option>
+          <option value="demak">demak</option>
+        </datalist>
+      </div>
+
+      <div class="input">
+        <label for="tanggal">Tanggal Lahir:</label><br>
+        <input type="date">
+      </div>
+
+      <div class="input">
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" id="pria">Pria
+        <input type="radio" name="gender" id="wanita">Wanita
+      </div>
+    
+      <div class="input">
+        <label for="tlp">No Telpon:</label><br>
+        <input type="number" placeholder="Nomor Telpon Anda">
+      </div>
+
+      <div class="input">
+        <label for="buku_fav">Buku Favorit:</label><br>
+        <input type="checkbox" name="buku_fav" value="Azzamine">Azzamine
+        <input type="checkbox" name="buku_fav" value="Tere_Liye">Tere Liye
+      </div>
+
+      <div class="input">
+        <label for="agama">Agama:</label><br>
+        <select id="agama" name="agama" class="select-agama">
+          <option value="Islam">Islam</option>
+          <option value="Kristen">Kristen</option>
+          <option value="Katholik">Katholik</option>
+          <option value="Hindu">Hindu</option>
+          <option value="Buddha">Buddha</option>
+          <option value="Konghucu">Konghucu</option>
+        </select>
+      </div>
+
+      <div class="input">
+        <label for="alamat">Alamat:</label><br>
+        <textarea placeholder="Alamat rumah Anda"></textarea>
+      </div>
+    
+      <div class="bttn">
+        <button type="reset">Clear</button>
+        <button type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
